@@ -14,7 +14,7 @@ const HomePage = () => {
         e.preventDefault(); 
         const formData = {username, language, stdin, sourceCode}; 
         try {
-            await axios.post('http://localhost:8000/api/submit', formData);
+            await axios.post('https://online-code-runner-backend.vercel.app/api/submit', formData);
             alert('Submitted successfully!');
             setUsername('');
             setLanguage('');

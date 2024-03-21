@@ -8,7 +8,7 @@ const Output = () => {
     useEffect(() => {
         const fetchSnippets = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/api/output');
+                const response = await axios.get('https://online-code-runner-backend.vercel.app/api/output');
                 setSnippetData(response.data);
             } catch (error) {
                 console.error('Error fetching snippets:', error);
